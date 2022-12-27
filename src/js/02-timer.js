@@ -37,8 +37,6 @@ const options = {
         timer = setInterval(() => {
           startBtn.disabled = true;
 
-          // https://stackoverflow.com/questions/4310953/invalid-date-in-safari
-
           const dateChoosenMs = new Date(dateChosen.value.replace(/-/g, '/')).getTime();
           const now = new Date().getTime();
           const timeLeft = dateChoosenMs - now;
